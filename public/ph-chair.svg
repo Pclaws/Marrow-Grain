@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 700" width="560" height="700">
+  <defs>
+    <pattern id="g" x="0" y="0" width="3" height="3" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="3" y2="3" stroke="#8B7050" stroke-width="0.3" opacity="0.5"/>
+    </pattern>
+    <linearGradient id="bg2" x1="0" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#C8BAA4"/>
+      <stop offset="100%" stop-color="#B8A88E"/>
+    </linearGradient>
+  </defs>
+  <rect width="560" height="700" fill="url(#bg2)"/>
+  <rect width="560" height="700" fill="url(#g)" opacity="0.5"/>
+  <!-- Chair back -->
+  <rect x="160" y="160" width="240" height="180" rx="8" fill="#7A5C3A" opacity="0.45"/>
+  <!-- Seat -->
+  <rect x="145" y="340" width="270" height="60" rx="6" fill="#7A5C3A" opacity="0.5"/>
+  <!-- Legs -->
+  <rect x="170" y="400" width="12" height="180" rx="3" fill="#6B4E2E" opacity="0.4"/>
+  <rect x="378" y="400" width="12" height="180" rx="3" fill="#6B4E2E" opacity="0.4"/>
+  <rect x="155" y="400" width="10" height="160" rx="3" fill="#6B4E2E" opacity="0.35" transform="rotate(-4 155 400)"/>
+  <rect x="395" y="400" width="10" height="160" rx="3" fill="#6B4E2E" opacity="0.35" transform="rotate(4 395 400)"/>
+  <!-- Arms -->
+  <rect x="145" y="280" width="25" height="70" rx="4" fill="#6B4E2E" opacity="0.4"/>
+  <rect x="390" y="280" width="25" height="70" rx="4" fill="#6B4E2E" opacity="0.4"/>
+</svg>

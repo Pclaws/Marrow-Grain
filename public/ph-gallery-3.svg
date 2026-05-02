@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 860" width="760" height="860">
+  <defs>
+    <linearGradient id="room3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F0EAE0"/>
+      <stop offset="100%" stop-color="#E0D4C0"/>
+    </linearGradient>
+  </defs>
+  <rect width="760" height="860" fill="url(#room3)"/>
+  <!-- Rug -->
+  <ellipse cx="380" cy="680" rx="240" ry="60" fill="#C4A870" opacity="0.25"/>
+  <!-- Chair in sunny room -->
+  <rect x="270" y="380" width="220" height="160" rx="6" fill="#6B4E2E" opacity="0.5"/>
+  <rect x="250" y="540" width="260" height="48" rx="5" fill="#6B4E2E" opacity="0.55"/>
+  <rect x="270" y="588" width="14" height="130" rx="3" fill="#5A3E22" opacity="0.45"/>
+  <rect x="476" y="588" width="14" height="130" rx="3" fill="#5A3E22" opacity="0.45"/>
+  <rect x="253" y="440" width="20" height="80" rx="4" fill="#5A3E22" opacity="0.4"/>
+  <rect x="487" y="440" width="20" height="80" rx="4" fill="#5A3E22" opacity="0.4"/>
+  <!-- Side table -->
+  <rect x="520" y="500" width="110" height="10" rx="3" fill="#8B5C30" opacity="0.45"/>
+  <rect x="569" y="510" width="12" height="120" rx="3" fill="#8B5C30" opacity="0.38"/>
+  <!-- Plant shadow -->
+  <ellipse cx="160" cy="760" rx="50" ry="16" fill="#1A1714" opacity="0.06"/>
+  <!-- Morning light -->
+  <rect x="600" y="0" width="160" height="380" fill="#F5E8C0" opacity="0.25"/>
+</svg>

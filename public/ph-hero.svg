@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 900" width="700" height="900">
+  <defs>
+    <pattern id="grain" x="0" y="0" width="4" height="4" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="4" y2="4" stroke="#A89880" stroke-width="0.3" opacity="0.4"/>
+      <line x1="4" y1="0" x2="0" y2="4" stroke="#A89880" stroke-width="0.3" opacity="0.2"/>
+    </pattern>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#D4C8B4"/>
+      <stop offset="100%" stop-color="#C2B49E"/>
+    </linearGradient>
+  </defs>
+  <rect width="700" height="900" fill="url(#bgGrad)"/>
+  <rect width="700" height="900" fill="url(#grain)" opacity="0.6"/>
+  <!-- Table silhouette -->
+  <rect x="175" y="340" width="350" height="12" rx="3" fill="#8B7355" opacity="0.5"/>
+  <rect x="195" y="352" width="14" height="220" rx="4" fill="#8B7355" opacity="0.4"/>
+  <rect x="491" y="352" width="14" height="220" rx="4" fill="#8B7355" opacity="0.4"/>
+  <rect x="217" y="352" width="14" height="200" rx="4" fill="#7A6448" opacity="0.35"/>
+  <rect x="469" y="352" width="14" height="200" rx="4" fill="#7A6448" opacity="0.35"/>
+  <!-- Wood grain on tabletop -->
+  <line x1="175" y1="344" x2="525" y2="344" stroke="#9E8B72" stroke-width="0.8" opacity="0.3"/>
+  <line x1="175" y1="347" x2="525" y2="347" stroke="#9E8B72" stroke-width="0.6" opacity="0.2"/>
+  <line x1="175" y1="350" x2="525" y2="350" stroke="#9E8B72" stroke-width="0.8" opacity="0.25"/>
+  <!-- Caption area -->
+  <rect x="175" y="800" width="200" height="1" fill="#8B7355" opacity="0.4"/>
+  <rect x="175" y="820" width="120" height="6" rx="2" fill="#8B7355" opacity="0.25"/>
+  <rect x="175" y="833" width="80" height="4" rx="2" fill="#8B7355" opacity="0.18"/>
+</svg>

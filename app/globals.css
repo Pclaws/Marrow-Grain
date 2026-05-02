@@ -1,26 +1,120 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-cream: #F5F0E8;
+  --color-ink: #1A1714;
+  --color-amber: #C8882A;
+  --color-cream-dark: #EDE7D9;
+  --color-cream-mid: #E8E1D4;
+  --color-ink-muted: #4A4440;
+  --color-ink-faint: #8A7F78;
+
+  --font-display: var(--font-playfair);
+  --font-body: var(--font-ibm-plex-serif);
+
+  --text-display-xl: 5.625rem;
+  --text-display-lg: 3.75rem;
+  --text-display-md: 2.5rem;
+  --text-display-sm: 1.875rem;
+
+  --leading-display: 0.95;
+  --leading-tight: 1.15;
+  --leading-body: 1.65;
+
+  --tracking-tight: -0.03em;
+  --tracking-display: -0.02em;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #F5F0E8;
+  color: #1A1714;
+  font-family: var(--font-ibm-plex-serif), Georgia, serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Focus visible */
+:focus-visible {
+  outline: 2px solid #C8882A;
+  outline-offset: 3px;
+}
+
+/* Skip nav link */
+.skip-nav {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  font-family: var(--font-ibm-plex-serif), Georgia, serif;
+  font-size: 0.875rem;
+  background: #1A1714;
+  color: #F5F0E8;
+  padding: 12px 24px;
+  text-decoration: none;
+  z-index: 9999;
+}
+.skip-nav:focus {
+  left: 16px;
+  top: 16px;
+  width: auto;
+  height: auto;
+}
+
+/* Custom cursor hide on product cards */
+.cursor-none-on-card {
+  cursor: none;
+}
+
+/* Hairline borders */
+.hairline {
+  border-width: 0.5px;
+}
+
+/* Specimen card number */
+.specimen-num {
+  font-family: var(--font-playfair), Georgia, serif;
+  font-size: 8rem;
+  line-height: 0.85;
+  color: #EDE7D9;
+  font-weight: 700;
+  user-select: none;
+  pointer-events: none;
+}
+
+/* Grain texture overlay */
+.grain-overlay::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 128px 128px;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.4;
+  mix-blend-mode: multiply;
 }

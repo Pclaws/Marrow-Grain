@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 840" width="680" height="840">
+  <defs>
+    <linearGradient id="room2" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0%" stop-color="#2C2820"/>
+      <stop offset="50%" stop-color="#3A3028"/>
+      <stop offset="100%" stop-color="#4A3E30"/>
+    </linearGradient>
+  </defs>
+  <rect width="680" height="840" fill="url(#room2)"/>
+  <!-- Warm floor -->
+  <rect x="0" y="560" width="680" height="280" fill="#5A4430" opacity="0.7"/>
+  <!-- Credenza in dark room -->
+  <rect x="100" y="340" width="480" height="180" rx="3" fill="#1A1410" opacity="0.9"/>
+  <rect x="100" y="340" width="480" height="180" rx="3" stroke="#3A2E20" stroke-width="1"/>
+  <line x1="340" y1="340" x2="340" y2="520" stroke="#3A2E20" stroke-width="0.8" opacity="0.6"/>
+  <!-- Lamp light -->
+  <ellipse cx="200" cy="280" rx="60" ry="80" fill="#F0D080" opacity="0.12"/>
+  <rect x="192" y="260" width="16" height="70" rx="2" fill="#C8A050" opacity="0.5"/>
+  <!-- Books on credenza -->
+  <rect x="420" y="310" width="8" height="28" rx="1" fill="#8B6040" opacity="0.7"/>
+  <rect x="430" y="314" width="6" height="24" rx="1" fill="#A07850" opacity="0.6"/>
+  <rect x="438" y="308" width="9" height="30" rx="1" fill="#6B4830" opacity="0.7"/>
+  <!-- Amber glow -->
+  <rect x="0" y="0" width="680" height="840" fill="#C8882A" opacity="0.04"/>
+</svg>
